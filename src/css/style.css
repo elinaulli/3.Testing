@@ -1,0 +1,31 @@
+.container {
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 450px;
+    width: 100%;
+    border-color: #000;
+    justify-content: center;
+}
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* .container-card {
+    padding-bottom: 10px;
+} */
+.result {
+    padding: 10px 0 10px 0;
+}
+.card-img {
+    width: 80px;
+    height: 40px;
+    filter: grayscale(100%); 
+    opacity: 0.6;
+}
+.card-img.active {
+    filter: grayscale(0%);
+    opacity: 1;
+}
