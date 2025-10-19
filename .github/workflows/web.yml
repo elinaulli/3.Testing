@@ -1,4 +1,4 @@
-name: 3. Testing
+name: Netology AHJ
 
 on:
   push:
@@ -30,8 +30,10 @@ jobs:
           cache: 'yarn'
       - run: yarn
       - run: yarn lint
-test:
+
+  test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -40,7 +42,8 @@ test:
           cache: 'yarn'
       - run: yarn
       - run: yarn test
-build:
+
+  build:
     needs: [eslint, test]
 
     environment:
